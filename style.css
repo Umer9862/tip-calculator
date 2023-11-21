@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+}
+
+html {
+  font-family: "Urbanist";
+  font-size: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  border: 2px solid var(--secondary-color);
+  background-color: rgb(27, 27, 27);
+  border-radius: 1rem;
+  transition: border 0.3s, background-color 0.3s;
+}
+
+.halfcard {
+  text-align: center;
+  background-color: var(--primary-color);
+  margin: 0.4rem;
+  padding: 3rem;
+}
+
+.spacing {
+  padding: 2rem;
+}
+
+input {
+  border: none;
+  outline: none;
+  text-align: right;
+  transition: color 0.3s;
+}
+
+input::placeholder {
+  text-align: right;
+  font-family: "Urbanist";
+  color: #999;
+}
+
+input:focus::placeholder {
+  color: #555;
+}
+
+input[type="button"] {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+input[type="button"]:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 0.4rem;
+}
+
+.clicked {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 0.4rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 2rem;
+  padding: auto;
+  color: var(--primary-color);
+}
+span {
+  font-size: 1rem;
+}
+input[type="range"] {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  margin: 10px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4caf50; /* Green */
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4caf50; /* Green */
+  cursor: pointer;
+}
+#submit {
+  font-family: "Urbanist";
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#submit:hover {
+  color: #555;
+}
